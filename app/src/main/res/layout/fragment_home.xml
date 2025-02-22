@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/L1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.MainActivity">
+
+    <!--on below line we are creating
+         a text for heading of our app-->
+
+    <!--on below line we are creating a recycler view-->
+
+
+    <TextView
+        android:id="@+id/idTVHeading"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="4dp"
+        android:text="SNEAKERSHIP"
+        android:textAlignment="viewStart"
+        android:textColor="#E47A58"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/searchicon" />
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="238dp"
+        android:padding="4dp"
+        android:layout_toEndOf="@+id/idTVHeading"
+        android:text="Popular"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sort"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="66dp"
+        android:padding="4dp"
+        android:text="Sort by"
+        android:textColor="#C6BEBE"
+        android:textColorHint="#CCC6C6"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="16dp"
+        android:layout_height="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/downarrow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/subheading"
+        android:layout_marginTop="0dp"
+        tools:listitem="@layout/gridlist_cardlayout"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/recycle_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="333dp" />
+
+
+</RelativeLayout>
